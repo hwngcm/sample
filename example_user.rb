@@ -1,9 +1,8 @@
 class User
-    attr_accessor :first_name,last_name, :email
+    attr_accessor :name, :email
   
     def initialize(attributes = {})
-      @first_name  = attributes[:name]
-      @last_name  = attributes[:name]
+      @name  = attributes[:name]
       @email = attributes[:email]
     end
   
@@ -11,7 +10,5 @@ class User
       "#{@name} <#{@email}>"
     end
 
-    def full_name
-        
-    end
+   
   end
